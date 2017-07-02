@@ -12,6 +12,9 @@
 
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/wells";
+
 
 // Custom partials
-@import "./partials/main-layout"
+@import "./partials/variables";
+@import "./partials/main-layout";

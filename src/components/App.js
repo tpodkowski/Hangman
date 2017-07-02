@@ -1,13 +1,19 @@
 import React from 'react';
-import LoginComponent from './LoginComponent'
+import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom';
+import LoginComponent from './LoginComponent';
+import HangmanComponent from './HangmanComponent';
 
 class AppComponent extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <LoginComponent />
-      </div>
+      <BrowserRouter>
+        <div className="container-fluid">
+          <Redirect exact to="/play" />
+          <Route path="/login" component={LoginComponent}/>
+          <Route path="/play" component={HangmanComponent}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
