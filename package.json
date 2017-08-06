@@ -40,6 +40,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.4"
